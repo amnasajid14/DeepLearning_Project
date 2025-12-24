@@ -31,7 +31,9 @@ The study evaluates both **mask-based** and **prompt-based generative inpainting
 - Create and activate a virtual environment:
 
   python -m venv venv
+  
   source venv/bin/activate # Linux / macOS
+  
   venv\Scripts\activate # Windows
 
 - Install dependencies:
@@ -45,6 +47,7 @@ The study evaluates both **mask-based** and **prompt-based generative inpainting
   Provide:
 
   -> An injured facial image
+  
   -> A binary mask (white = inpaint region, black = preserve region)
 
 Run inference:
@@ -56,6 +59,7 @@ python inpainting_benchmark.py --image path/to/image.png --mask path/to/mask.png
   Provide:
 
   -> An injured facial image
+  
   -> An identity-preserving textual prompt
 
 Run inference:
@@ -67,11 +71,13 @@ python inpainting_benchmark.py --image path/to/image.png --prompt "identity pres
 - Qualitative Evaluation
 
   1.Visual inspection of reconstructed facial regions
+  
   2.Analysis of identity consistency, boundary blending, and perceptual realism
 
 - Quantitative Metrics (Baseline Only)
 
   1.PSNR (Peak Signal-to-Noise Ratio)
+  
   2.SSIM (Structural Similarity Index)
 
 These metrics are reported as supplementary indicators only and do not directly represent identity preservation.
@@ -79,17 +85,23 @@ These metrics are reported as supplementary indicators only and do not directly 
 ## Limitations
 
 1.Lack of ground-truth healed facial images
+
 2.No identity-specific supervision
+
 3.Results are feasibility-oriented, not forensic-certified
 
 ## Future Work
 
 1.Identity-based evaluation using ArcFace embeddings
+
 2.Ethical construction of expert-annotated forensic datasets
+
 3.Development of injury-aware identity-preserving inpainting architectures
+
 4.Human perceptual evaluation studies
 
 ## Authors
 
 Amna Sajid
+
 Hareem Fatima
