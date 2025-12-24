@@ -1,0 +1,12 @@
+torch
+diffusers
+transformers
+accelerate
+safetensors
+numpy
+opencv-python
+Pillow
+matplotlib
+scikit-image
+lpips
+simple-lama-inpainting
